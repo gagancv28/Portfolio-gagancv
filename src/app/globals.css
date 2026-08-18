@@ -725,16 +725,17 @@ html.lenis, html.lenis body { height: auto; }
 .form-input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 2px solid #a1a1aa;
   color: var(--white);
   font-family: var(--font-body);
   font-size: 1rem;
   padding: 0.75rem 0;
   outline: none;
   transition: border-color 0.3s ease;
+  width: 100%;
 }
-.form-input:focus { border-color: var(--wine-red); }
-.form-input::placeholder { color: rgba(255,255,255,0.2); }
+.form-input:focus { border-color: var(--white); }
+.form-input::placeholder { color: #d4d4d8; }
 .form-textarea {
   resize: none;
   height: 100px;

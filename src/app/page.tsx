@@ -51,11 +51,11 @@ const projects = [
 
 const certificates = [
   { name: 'Adobe Creative Cloud', issuer: 'Adobe', year: 'Verified', actionText: 'View Certificate', link: 'https://www.linkedin.com/feed/update/urn:li:activity:7491096402345750529/' },
-  { name: 'Brave', issuer: 'Brave Software', year: 'Verified', actionText: 'View Certificate', link: 'https://www.linkedin.com/feed/update/urn:li:activity:7485670229382139904' },
+  { name: 'Brave', issuer: 'NIAT', year: 'Verified', actionText: 'View Certificate', link: 'https://www.linkedin.com/feed/update/urn:li:activity:7485670229382139904' },
   { name: 'Claude Code 101', issuer: 'Anthropic', year: 'Verified', actionText: 'Verify Certificate', link: 'https://verify.skilljar.com/c/aaatfix67rfb' },
   { name: 'Claude 101', issuer: 'Anthropic', year: 'Verified', actionText: 'Verify Certificate', link: 'https://verify.skilljar.com/c/qg7zs3jobdxu' },
   { name: 'AI Capabilities and Limitations', issuer: 'Anthropic / DeepLearning.AI', year: 'Verified', actionText: 'Verify Certificate', link: 'https://verify.skilljar.com/c/f74j2pkc3qte' },
-  { name: 'AI Fluency: Framework & Foundations', issuer: 'AI Institute', year: 'Verified', actionText: 'Verify Certificate', link: 'https://verify.skilljar.com/c/tqxf3t9g84xr' },
+  { name: 'AI Fluency: Framework & Foundations', issuer: 'Anthropic', year: 'Verified', actionText: 'Verify Certificate', link: 'https://verify.skilljar.com/c/tqxf3t9g84xr' },
   { name: 'Yuva AI for ALL', issuer: 'Yuva AI', year: 'Verified', actionText: 'View Document', link: 'https://drive.google.com/file/d/1OpzmdkDprjh0WJ4kcfWn8NrQcnCdgkfH/view' },
 ]
 
@@ -333,57 +333,65 @@ export default function Portfolio() {
 
         {/* Featured Experience Highlight Card — Light Luxury Silver-Glass Palette */}
         <div className="reveal" style={{ marginTop: '3.5rem' }}>
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white via-zinc-50 to-zinc-100/90 text-zinc-900 p-8 md:p-12 border border-zinc-200/90 shadow-xl shadow-zinc-200/50 border-t-4 border-t-[#6b0f1a]">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+          {/* Outer wrapper provides the clean 4px wine-red top accent with proper rounding */}
+          <div
+            className="rounded-2xl bg-gradient-to-br from-white via-zinc-50 to-zinc-100/90 text-zinc-900"
+            style={{
+              padding: '2.5rem 2.75rem',
+              borderTop: '4px solid #6b0f1a',
+              boxShadow: '0 0 0 1px rgba(228,228,231,0.85), 0 20px 50px rgba(228,228,231,0.25)',
+            }}
+          >
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
               {/* Left Column: Role & Company Info */}
-              <div className="lg:col-span-5 flex flex-col gap-3">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider uppercase text-[#6b0f1a] bg-[#6b0f1a]/10 border border-[#6b0f1a]/30 w-max shadow-sm">
+              <div className="lg:col-span-5 flex flex-col gap-4">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase text-[#6b0f1a] bg-[#6b0f1a]/10 border border-[#6b0f1a]/30 w-max shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-[#6b0f1a] animate-pulse" />
                   FEATURED EXPERIENCE
                 </div>
 
-                <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 mt-1">
+                <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900">
                   AI Implementation Intern
                 </h3>
-                
+
                 <p className="text-lg font-semibold text-[#6b0f1a]">
                   Guduchi Ayurveda
                 </p>
-                
-                <p className="text-xs uppercase tracking-widest text-zinc-500 font-mono mt-2">
+
+                <p className="text-xs uppercase tracking-widest text-zinc-400 font-mono">
                   Specialized Technical Internship
                 </p>
               </div>
 
               {/* Right Column: Achievements Bulleted List */}
-              <div className="lg:col-span-7 flex flex-col gap-4">
-                <h4 className="text-xs uppercase tracking-widest text-zinc-500 font-mono font-semibold mb-1">
-                  Key Accomplishments & Impact
+              <div className="lg:col-span-7 flex flex-col gap-5">
+                <h4 className="text-xs uppercase tracking-widest text-zinc-400 font-mono font-semibold">
+                  Key Accomplishments &amp; Impact
                 </h4>
-                
-                <ul className="space-y-3.5 text-sm md:text-base text-zinc-700">
-                  <li className="flex items-start gap-3">
+
+                <ul className="flex flex-col gap-5 text-sm md:text-base text-zinc-700">
+                  <li className="flex items-start gap-4">
                     <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#6b0f1a]/10 border border-[#6b0f1a]/30 text-[#6b0f1a] flex items-center justify-center text-xs mt-0.5 font-bold shadow-sm">
                       ✓
                     </span>
-                    <span>
+                    <span className="leading-relaxed">
                       Engineered automated data pipelines and conducted statistical data analysis to extract actionable business insights.
                     </span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-4">
                     <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#6b0f1a]/10 border border-[#6b0f1a]/30 text-[#6b0f1a] flex items-center justify-center text-xs mt-0.5 font-bold shadow-sm">
                       ✓
                     </span>
-                    <span>
+                    <span className="leading-relaxed">
                       Designed and deployed report automation systems, significantly reducing manual data compilation time and improving operational efficiency.
                     </span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-4">
                     <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#6b0f1a]/10 border border-[#6b0f1a]/30 text-[#6b0f1a] flex items-center justify-center text-xs mt-0.5 font-bold shadow-sm">
                       ✓
                     </span>
-                    <span>
-                      Developed and implemented robust test harnesses to evaluate and optimize AI models prior to deployment.
+                    <span className="leading-relaxed">
+                      Conducted comprehensive research on AI capabilities and limitations to determine optimal integration strategies and technical implementations for their ecosystem.
                     </span>
                   </li>
                 </ul>
@@ -462,7 +470,7 @@ export default function Portfolio() {
               {[
                 { name: 'GitHub', handle: '@gagancv28', href: 'https://github.com/gagancv28' },
                 { name: 'LinkedIn', handle: 'Gagan C V', href: 'https://www.linkedin.com/in/gagan-cv-5b3b22369/' },
-                { name: 'Email', handle: 'gagancvcm28@gmail.com', href: 'mailto:gagancvcm28@gmail.com' },
+                { name: 'Email', handle: 'gagancvcm28@gmail.com', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=gagancvcm28@gmail.com' },
                 { name: 'Location', handle: 'Bangalore, Karnataka, India', href: '#' },
               ].map(s => (
                 <a key={s.name} href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined} className="social-link">
@@ -570,9 +578,9 @@ function ContactForm() {
       console.error('Contact form submission error:', err)
     }
 
-    // Trigger mailto fallback to gagancvcm28@gmail.com
-    const mailtoUrl = `mailto:gagancvcm28@gmail.com?subject=${encodeURIComponent('Portfolio Message from ' + form.name)}&body=${encodeURIComponent('Name: ' + form.name + '\nEmail: ' + form.email + '\n\nMessage:\n' + form.message)}`
-    window.open(mailtoUrl, '_blank')
+    // Open Gmail web compose in new tab (bypasses OS mail app)
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=gagancvcm28@gmail.com&su=${encodeURIComponent('Portfolio Message from ' + form.name)}&body=${encodeURIComponent('Name: ' + form.name + '\nEmail: ' + form.email + '\n\nMessage:\n' + form.message)}`
+    window.open(gmailUrl, '_blank')
 
     setIsSubmitting(false)
     setIsSent(true)
