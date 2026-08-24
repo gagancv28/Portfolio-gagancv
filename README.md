@@ -36,6 +36,9 @@ An interactive location intelligence and map review platform engineered for stre
 🛍️ **[VS German Silver — E-Commerce Showcase](https://www.vsgerman.online/)**  
 A modern, high-performance client-side e-commerce platform built for showcasing premium products with a fluid user interface and highly responsive design system.
 
+📱 **[MobiMart — B2B Retail Inventory Optimizer](https://mobi-mart-two.vercel.app/)**  
+An intelligent inventory allocation and End-of-Life (EOL) optimization platform for a 25-store retail network. Features a dynamic restock engine constrained by a strict working capital cap, automated transfer vs. markdown logic, and a live stress-test simulator to minimize dead stock.
+
 ### 📫 Reach Me
 
 *   ✉️ [gagancvcm28@gmail.com](mailto:gagancvcm28@gmail.com)
