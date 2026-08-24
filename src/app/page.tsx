@@ -14,6 +14,23 @@ gsap.registerPlugin(ScrollTrigger)
 ───────────────────────────────────────────── */
 const projects = [
   {
+    id: 'mobimart',
+    tag: 'B2B Inventory & EOL Optimizer',
+    title: 'MobiMart',
+    role: 'Full-Stack Developer · Inventory Optimization',
+    year: '2026',
+    desc: 'An intelligent B2B inventory allocation platform tailored for a multi-store retail chain to optimize working capital and mitigate End-of-Life (EOL) stock losses.',
+    features: [
+      'Engineered a dynamic weekly restock engine that allocates capital based on prioritized sales velocity under strict budget caps.',
+      'Developed a Transfer vs. Markdown optimizer evaluating inter-store logistics costs against steep promotional markdown losses.',
+      'Implemented a Live Stress-Test Simulator enabling store owners to inject demand shocks and re-plan inventory instantly.',
+    ],
+    tech: ['Next.js', 'Tailwind CSS', 'Supabase', 'Vercel'],
+    img: '/mobimart-preview.png',
+    demoLink: 'https://mobi-mart-two.vercel.app/',
+    githubLink: 'https://github.com/gagancv28/MobiMart',
+  },
+  {
     id: 'vs-german-silver',
     tag: 'E-Commerce · Showcase Platform',
     title: 'VS GERMAN SILVER',
@@ -272,7 +289,7 @@ export default function Portfolio() {
           <div className="about-highlights reveal">
             {[
               { n: '7+', l: 'Certifications Earned' },
-              { n: '2+', l: 'Core Production Web Apps Shipped' },
+              { n: '3+', l: 'Core Production Web Apps Shipped' },
               { n: 'AI', l: 'Implementation Experience at Guduchi Ayurveda' },
             ].map(({ n, l }) => (
               <div key={l} className="highlight-card">
