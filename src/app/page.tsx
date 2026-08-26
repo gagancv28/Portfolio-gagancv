@@ -14,6 +14,24 @@ gsap.registerPlugin(ScrollTrigger)
 ───────────────────────────────────────────── */
 const projects = [
   {
+    id: 'burdenoff',
+    tag: 'Custom SLA & Business-Hour Tracker',
+    title: 'BurdenOff Ticket Dashboard',
+    role: 'Full-Stack Developer · Support Automation',
+    year: '2026',
+    desc: 'A full-stack support dashboard featuring a specialized time-parsing algorithm that calculates exact business-hour deadlines to ensure fair and accurate SLA targets.',
+    features: [
+      'Engineered an intelligent scheduling algorithm that automatically skips weekends and after-hours (outside 9 AM–5 PM) for realistic SLA tracking.',
+      'Implemented real-time data synchronization via Apollo Client, enabling live ticket creation and UI updates without page refreshes.',
+      'Designed dynamic triage filtering to instantly monitor, prioritize, and alert on at-risk SLAs before they breach.',
+    ],
+    tech: ['React', 'TypeScript', 'Bun', 'GraphQL Yoga', 'PostgreSQL', 'Prisma', 'Docker'],
+    img: '/burdenoff-preview.png',
+    demoLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7498242848828358656/',
+    githubLink: 'https://github.com/gagancv28/BurdenOff_Ticket-Dashboard',
+    isVideo: true,
+  },
+  {
     id: 'mobimart',
     tag: 'B2B Inventory & EOL Optimizer',
     title: 'MobiMart',
@@ -445,7 +463,7 @@ export default function Portfolio() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <a href={p.demoLink} target="_blank" rel="noopener noreferrer" className="project-btn">
-                  Explore Project <span>→</span>
+                  {p.isVideo ? 'VIEW DEMO VIDEO' : 'Explore Project'} <span>→</span>
                 </a>
                 <a href={p.githubLink} target="_blank" rel="noopener noreferrer" className="project-btn" style={{ background: '#f0efeb', color: '#0a0a0a', border: '1px solid #ddd' }}>
                   GitHub Repo <span>↗</span>
