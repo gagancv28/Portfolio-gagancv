@@ -30,7 +30,7 @@ Real-Time Streaming Pipelines · WebSockets/WebRTC · Voice Activity Detection (
 ✍️ **[Write Maker — AI Writing Assistant](https://write-maker-project1.vercel.app/)**  
 A full-stack web platform applying NLP and generative AI to transform user ideas into structured academic drafts, featuring secure data pipelines and a custom real-time analytics dashboard.
 
-📍 **[Map Review — Spatial Web Analytics](https://map-reviews.vercel.app/)**  
+📍 **[Map Review — Spatial Web Analytics](https://github.com/gagancv28/mapReviews)**  
 An interactive location intelligence and map review platform engineered for streamlined visual analytics, spatial user feedback collection, and RESTful API integrations.
 
 🛍️ **[VS German Silver — E-Commerce Showcase](https://www.vsgerman.online/)**  
