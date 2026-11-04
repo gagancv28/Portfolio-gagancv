@@ -14,6 +14,23 @@ gsap.registerPlugin(ScrollTrigger)
 ───────────────────────────────────────────── */
 const projects = [
   {
+    id: 'veritas',
+    tag: 'AI-Based Loan Eligibility & Credit Risk Engine',
+    title: 'Veritas',
+    role: 'AI & Full-Stack Developer · Credit Risk Systems',
+    year: '2026',
+    desc: 'An institutional credit underwriting portal that pairs a Platt-calibrated Gradient Boosting classifier (85.3% ROC-AUC) with Explainable AI (XAI) to evaluate borrower default risk in real time.',
+    features: [
+      'Engineered a 3-layer forensic bank statement parser for New-to-Credit (NTC) cash-flow underwriting under the RBI Account Aggregator framework.',
+      'Integrated local feature-contribution breakdowns to provide transparent risk assessments.',
+      'Developed an automated counterfactual advisor that calculates actionable paths to loan approval.',
+    ],
+    tech: ['Python', 'Flask', 'Explainable AI', 'Next.js', 'Vercel'],
+    img: '/veritas-preview.png',
+    demoLink: 'https://loan-elegibility.vercel.app/',
+    githubLink: 'https://github.com/gagancv28/Loan-Eligibility',
+  },
+  {
     id: 'burdenoff',
     tag: 'Custom SLA & Business-Hour Tracker',
     title: 'BurdenOff Ticket Dashboard',
@@ -45,8 +62,9 @@ const projects = [
     ],
     tech: ['Next.js', 'Tailwind CSS', 'Supabase', 'Vercel'],
     img: '/mobimart-preview.png',
-    demoLink: 'https://mobi-mart-two.vercel.app/',
+    demoLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7498250408134610944/',
     githubLink: 'https://github.com/gagancv28/MobiMart',
+    isVideo: true,
   },
   {
     id: 'vs-german-silver',
@@ -79,8 +97,9 @@ const projects = [
     ],
     tech: ['Full-Stack Web Development', 'REST APIs', 'Interactive Maps'],
     img: '/project-mapreview.png',
-    demoLink: 'https://map-reviews.vercel.app/',
+    demoLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7485665061869649920/',
     githubLink: 'https://github.com/gagancv28/mapReviews',
+    isVideo: true,
   },
 ]
 
